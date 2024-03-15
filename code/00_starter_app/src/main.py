@@ -42,6 +42,10 @@ app = fastapi.FastAPI(docs_url=None, redoc_url=None, debug=development_mode, lif
 #
 #       docker run -d --rm -p 127.0.0.1:27017:27017 -v mongodata:/data/db --name mongosvr mongo
 #
+# 5. Wenn der lokale mongodb server schon läuft: Andere port number vergeben  oder den lokalen server mit:
+#       $ pgrep mongod
+#         returns process id (e.g: 1455)
+#       $ sudo kill 1455
 
 
 def main():
